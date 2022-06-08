@@ -58,14 +58,11 @@ function PaymentDetails() {
                         Entry Date: {item?.carParkingDate}
                     </Typography>
                     <Typography color="textSecondary">
-                        Exit Time: {item?.exitTime}
+                        Exit Time: {item?.carExistTime}
                     </Typography>
-
                     <Typography color="textSecondary">
                         Charge: $30
                     </Typography>
-
-
                 </Grid>
                 <Grid item xs={12} >
                     {!res && <Button variant='outlined' onClick={onPaymentHandler} color="primary" >Payment</Button>}

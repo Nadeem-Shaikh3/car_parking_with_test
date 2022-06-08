@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
                         variant='outlined' placeholder="Number of spaces" fullWidth />
                 </Grid>
                 <Grid container justifyContent='center' style={{ marginTop: "20px" }}>
-                    <Button data-testid='btn' disabled={!spaces} variant='outlined' color='secondary' onClick={navigateToParkingSlot}>Create Spaces</Button>
+                    <Button data-testid='btn' disabled={!spaces} variant='outlined'  color='secondary' onClick={navigateToParkingSlot}>Create Spaces</Button>
                 </Grid>
             </Grid>
         </div>

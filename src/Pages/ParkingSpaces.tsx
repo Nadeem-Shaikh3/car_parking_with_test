@@ -35,12 +35,14 @@ export const useStyles = makeStyles((theme) => ({
         marginBottom: 12,
     },
     modalBtn: {
-        margin: "20px 10px"
+        margin: "20px 10px",
+        color:"red"
     },
     color: {
         color: "#0288d1",
         width: "225px",
-        margin: "10px 0"
+        margin: "10px 0",
+        // border:"1px solid red"
     },
     pay:{
         justifyContent:"center",
@@ -91,8 +93,10 @@ const ParkingSpaces: React.FC = () => {
             const date = `${current.getDate()}/${current.getMonth() + 1
                 }/${current.getFullYear()}`;
             const time = `${current.getHours()}:${current.getMinutes()}`;
+            const exitTime = `${current.getHours() + 3}:${current.getMinutes()}`
             selectedSpaces[objIndex].carParkingDate = date;
             selectedSpaces[objIndex].carParkingTime = time;
+            selectedSpaces[objIndex].carExistTime = exitTime;
         }
         updateSelectedSpace([...selectedSpaces]);  
     };
@@ -127,8 +131,6 @@ const ParkingSpaces: React.FC = () => {
                                     onChange={onChangeHandler}
                                     label="Enter Car Registration No"
                                     variant="outlined" /><br />
-
-
 
                                 <Button disabled={!registerNumber} size='large' variant="contained"
                                     className={classes.color}
