@@ -107,7 +107,7 @@ const ParkingSpaces: React.FC = () => {
 
         <div>
             <div>
-                <Button variant='outlined' color='primary' onClick={handleOpen} className={classes.modalBtn}>Enter Car Details</Button>
+                <Button id='abc' data-testid='paybtn' variant='outlined' color='primary' onClick={handleOpen} className={classes.modalBtn}>Enter Car Details</Button>
 
                 <Modal
                     aria-labelledby="transition-modal-title"

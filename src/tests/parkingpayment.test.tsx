@@ -14,22 +14,11 @@ import ParkingSpaces from "../Pages/ParkingSpaces";
 
 
 
-// it("check btn", () => {
-//     render(<ParkingSpaces />)
-//     const buttonElement = screen.getByRole("button");
-//     // userEvent.click(buttonElement)
-//     expect(buttonElement).toBeInTheDocument
-// })
+it("check btn", () => {
+    render(<ParkingSpaces />)
+    const buttonElement = screen.getByRole("button");
+    // userEvent.click(buttonElement)
+    expect(buttonElement).toBeInTheDocument
+})
 
 
-// jest.mock('axios');
-
-// const fakeUsers = [{data:200}]
-// describe('App component', () => {
-//     test('it renders', async () => {
-//       axios.get.mockResolvedValue({ data: fakeUsers });
-//       render(<ParkingSpaces />);
-   
-   
-//       expect(screen.getByText('Users:')).toBeInTheDocument();
-//     });

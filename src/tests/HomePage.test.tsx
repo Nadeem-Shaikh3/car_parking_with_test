@@ -24,10 +24,9 @@ it("submit btn should disabled", () => {
 })
 it("handling textfield function",() => {
     render(<HomePage/>)
-    const textfield: any = screen.getByTestId('home').querySelector('input')
-        fireEvent.change(textfield, { target: { value: "4" } })
-        expect(textfield.value).toBe("4")
+    const textfield: any = screen.getByTestId('home')
+        fireEvent.change(textfield, { target: { value: "hi" } })
+        expect(textfield.value).toBe("hi")
     })
-
 
 

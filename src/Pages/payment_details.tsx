@@ -26,7 +26,7 @@ function PaymentDetails() {
     const onPaymentHandler = (id: any) => {
         axios.post("https://httpstat.us/200", {})
             .then((res) => {
-                alert("payment Done")
+                alert("payment done")
                 setRes(res.data)
             })
     }
